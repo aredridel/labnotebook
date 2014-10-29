@@ -28,4 +28,9 @@ I've a controller `next.js` that just has a `router.get('/*'` in it. If I pass t
 
 Very weird.
 
+# Wed Oct 29 01:03:31 EDT 2014
+
+Turns out to be a broken check for `://` in URLs; ultimately decided to just
+skip checking if the URL starts with `/`. URL parsing in Express is magical,
+but it's mostly usable magic. PR made.
 
