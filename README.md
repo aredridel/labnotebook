@@ -21,3 +21,11 @@ function errTo(errcb, resultcb) {
 Guess I'll make a module now.
 
 Oh, hey, [iferr](https://github.com/shesek/iferr).
+
+# Tue Oct 28 23:02:04 EDT 2014
+
+I've a controller `next.js` that just has a `router.get('/*'` in it. If I pass the URL `/next/http://foo.bar` to it, `req.params[0]` is `http://foo.bar`.  If I pass `/next/http://foo.bar/`, `req.params[0]` is `/next/http://foo.bar`.
+
+Very weird.
+
+
